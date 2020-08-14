@@ -56,7 +56,9 @@ class Song
   def self.new_from_filename(filename)
     file_parts = filename.gsub(/(\.mp3)/, " ")  
     file_split = file_parts.split(" - ")
-    binding.pry 
+    
+    
+    # binding.pry 
   end 
   
 
