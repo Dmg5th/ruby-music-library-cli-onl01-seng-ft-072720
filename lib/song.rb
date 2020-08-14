@@ -54,8 +54,10 @@ class Song
   end
   
   def self.new_from_filename(filename)
-    file_parts = filename(/)  
+    file_parts = filename.gsub(/[/.mp3]/, " ")  
   end 
+  
+
   
   
 end 
