@@ -59,7 +59,7 @@ class Song
     artist = Artist.find_or_create_by_name(file_split[0])
     song = Song.find_or_create_by_name(file_split[1])
     genre = Genre.find_or_create_by_name(file_split[2])
-    song 
+    song.artist = artist 
     
     # binding.pry 
   end 
