@@ -53,17 +53,9 @@ class Song
     find_by_name(song) || create(song)
   end
   
-  
-  def self.new_from_filename(file_name)
-    file_bits = file_name.gsub(/(\.mp3)/,'')
-    file_bits = file_bits.split(" - ")
-    artist = Artist.find_or_create_by_name(file_bits[0])
-    genre = Genre.find_or_create_by_name(file_bits[2])
-    song = Song.find_or_create_by_name(file_bits[1])
-    song.genre = genre
-    song.artist = artist
-    song
-  end
+  def self.new_from_filename(filename)
+    file_parts = filename(/)  
+  end 
   
   
 end 
