@@ -53,11 +53,6 @@ class Song
     find_by_name(song) || create(song)
   end
   
-  def self.new_from_filename(filename)
-  file = filename.split(" - ")[1]
-  file = self.new 
-  end 
-  
   
   def self.new_from_filename(file_name)
     file_bits = file_name.gsub(/(\.mp3)/,'')
