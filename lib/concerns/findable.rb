@@ -4,6 +4,8 @@ module Concerns::Findable
     self.all.find { |song| song.name == name }  
   end 
   
+  def 
+  
   
   
   
