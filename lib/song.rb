@@ -60,10 +60,11 @@ class Song
     song = Song.find_or_create_by_name(file_split[1])
     genre = Genre.find_or_create_by_name(file_split[2])
     song.artist = artist 
+    song.genre = dance 
     song 
-    
-    # binding.pry 
   end 
+  
+  # binding.pry 
   
 
  
