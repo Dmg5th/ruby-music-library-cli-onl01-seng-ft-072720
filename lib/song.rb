@@ -64,6 +64,10 @@ class Song
     song 
   end 
   
+  def create_from_filename(filename)
+      
+  end 
+  
   # binding.pry 
   
 
