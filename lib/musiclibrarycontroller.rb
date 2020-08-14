@@ -6,6 +6,11 @@ class MusicLibraryController
     importer.import
   end
   
+  def call 
+    puts "Welcome user"  
+    
+  end 
+  
  
   
   
